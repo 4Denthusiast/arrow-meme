@@ -1,0 +1,32 @@
+cabal-version:       2.2
+
+name:                arrow-meme
+version:             1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/4Denthusiast/arrow-meme
+license:             0BSD
+author:              4Denthusiast
+copyright:           2023 Author name here
+build-type:          Simple
+extra-source-files:  README.md
+                     CHANGELOG.md
+                     config.txt
+
+executable arrow-meme
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5,
+                       gtk ^>= 0.15.8,
+                       mtl,
+                       template-haskell ^>= 2.19.0
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
